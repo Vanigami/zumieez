@@ -6,11 +6,14 @@ import { Provider } from "react-redux"
 import shoppingCartReducer from "./reducers/shoppingCartReducer"
 import App from './App';
 
+const store = createStore(shoppingCartReducer)
+//state changes in response to shoppingcartreducer's filtered actions
+
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
