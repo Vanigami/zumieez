@@ -12,6 +12,7 @@ class Home extends Component {
                         <span className="card-title">{item.title}</span>
                         <span to="/" className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></span>
                     </div>
+                    <div className="card-content"><p><b>Price: ${item.price}</b></p></div>
                 </div>
             )
         })
