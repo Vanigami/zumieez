@@ -6,14 +6,21 @@ class Home extends Component {
     render() {
         let itemList = this.props.items.map(item=>{
             return(
-                <div className="card" key={item.id}>
-                    <div className="card-image">
-                        <img src={item.img} alt={item.title}/>
-                        <span className="card-title">{item.title}</span>
-                        <span to="/" className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add</i></span>
+                <div class="row">
+                <div class="col s12 m6">
+                  <div class="card" key={item.id}>
+                  <span class="card-title">{item.title}</span>
+                    <div class="card-image">
+                      <img src={item.img}/>
+                     
+                      <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
                     </div>
-                    <div className="card-content"><p><b>Price: ${item.price}</b></p></div>
+                    <div class="card-content">
+                      <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
             )
         })
         return(
