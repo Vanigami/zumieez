@@ -1,7 +1,9 @@
+import goldbears from '../images/goldbears.png'
+
 const initState = {
     items: [
        
-        {id:1, title:"Gold Bears Gummi Candy",price:1.79}
+        {id:1, title:"Gold Bears Gummi Candy",price:1.79,img:goldbears}
     ],
     addedItems:[],
     total: 0
